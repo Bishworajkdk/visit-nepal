@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tourist map of Nepal | Visit Nepal</title>
+<meta name="description" content="An interactive tourist map of Nepal: heritage sites, sacred places, national parks, trek routes and airports.">
+<script>if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) document.documentElement.classList.add("motion");</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Mukta:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="notice"><div class="wrap"><p><strong>Travel update:</strong> most of Nepal is open. Rasuwa and the Trishuli River valley were hit by the August 2026 flood. <a href="support.html#travel">What is affected</a></p></div></div>
+  <div class="bar wrap">
+    <a class="brand" href="index.html">Visit Nepal <span lang="ne">नेपाल</span></a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="index.html">Guide</a></li>
+        <li><a href="places.html">Places</a></li>
+        <li><a href="map.html" aria-current="page">Map</a></li>
+        <li><a href="calendar.html">Calendar</a></li>
+        <li><a href="support.html">Flood relief</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section class="page-hero short" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Gokyo_Ri_summit,_Gokyo_Lake,_Nepal,_Himalayas.jpg?width=2000')">
+  <div class="wrap">
+    <p class="hero-ne" lang="ne" data-reveal>नेपालको नक्सा</p>
+    <h1 data-reveal>Tourist map</h1>
+    <p class="lede" data-reveal>Heritage sites, sacred places, national parks and the great treks, all in one place. Tap any point for details and directions.</p>
+  </div>
+</section>
+<section class="map-section">
+  <div class="wrap">
+    <div class="chips map-chips" role="group" aria-label="Show on the map">
+        <button type="button" data-map-filter="all" aria-pressed="true">All</button>
+        <button type="button" data-map-filter="heritage" aria-pressed="false">Heritage</button>
+        <button type="button" data-map-filter="spiritual" aria-pressed="false">Spiritual</button>
+        <button type="button" data-map-filter="nature" aria-pressed="false">Nature and wildlife</button>
+        <button type="button" data-map-filter="trek" aria-pressed="false">Treks</button>
+        <button type="button" data-map-filter="airport" aria-pressed="false">Airports</button>
+        <button type="button" data-map-filter="closed" aria-pressed="false">Closed</button>
+    </div>
+  </div>
+  <div class="wrap map-layout">
+    <div class="map-frame"><div id="nepal-map" role="region" aria-label="Map of Nepal"></div></div>
+    <aside class="map-side">
+      <p class="map-hint">Select a place to fly to it. Click the map once to zoom with your mouse wheel.</p>
+      <ul class="map-list"></ul>
+    </aside>
+  </div>
+  <div class="wrap">
+    <div class="map-legend" aria-hidden="true">
+      <span><i style="background:#b3122c"></i>Heritage</span><span><i style="background:#d99a14"></i>Spiritual</span><span><i style="background:#2f8a57"></i>Nature</span><span><i style="background:#2a62ad"></i>Treks</span><span><i style="background:#5b6b80"></i>Airports</span><span><i style="background:#8a8f98"></i>Closed</span><span><b class="route-key"></b>Trek route</span>
+    </div>
+    <p class="news-note">Locations and dotted trek routes are approximate and meant for planning, not navigation on the trail. For trekking, carry a detailed map and go with a licensed guide. Map data from OpenStreetMap contributors.</p>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="flags" aria-hidden="true"></div>
+  <div class="wrap cols">
+    <section>
+      <h2>Visit Nepal</h2>
+      <p>A non-profit guide for anyone planning a first trip to Nepal, made by Bishworaj Khadka to share the country he comes from.</p>
+    </section>
+    <section>
+      <h2>In this guide</h2>
+      <ul>
+        <li><a href="index.html#where">Where to go</a></li>
+        <li><a href="index.html#when">When to go</a></li>
+        <li><a href="index.html#itineraries">Sample itineraries</a></li>
+        <li><a href="index.html#essentials">Travel essentials</a></li>
+        <li><a href="index.html#crafts">Arts and crafts</a></li>
+        <li><a href="map.html">Tourist map</a></li>
+        <li><a href="calendar.html">Nepali calendar and rashifal</a></li>
+        <li><a href="index.html#news">Latest news</a></li>
+      </ul>
+    </section>
+    <section>
+      <h2>Help after the flood</h2>
+      <p>Give directly to the Government of Nepal through the <a href="https://pmdrf.nchl.com.np/" rel="noopener">Prime Minister Disaster Relief Fund</a>. This site never collects donations.</p>
+    </section>
+  </div>
+  <div class="legal"><div class="wrap">&copy; 2026 Bishworaj Khadka. Photographs by their credited authors, see <a href="about.html#credits">photo credits</a>.</div></div>
+</footer>
+<script src="js/config.js" defer></script>
+<script src="js/calendar-data.js" defer></script>
+<script src="js/site.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js" defer></script>
+<script src="js/map-data.js" defer></script>
+<script src="js/map.js" defer></script>
+</body>
+</html>

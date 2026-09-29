@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nepali calendar and rashifal | Visit Nepal</title>
+<meta name="description" content="Today&#x27;s date in the Nepali Bikram Sambat calendar, a month view, a date converter and the daily rashifal.">
+<script>if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) document.documentElement.classList.add("motion");</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Mukta:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="notice"><div class="wrap"><p><strong>Travel update:</strong> most of Nepal is open. Rasuwa and the Trishuli River valley were hit by the August 2026 flood. <a href="support.html#travel">What is affected</a></p></div></div>
+  <div class="bar wrap">
+    <a class="brand" href="index.html">Visit Nepal <span lang="ne">नेपाल</span></a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="index.html">Guide</a></li>
+        <li><a href="places.html">Places</a></li>
+        <li><a href="map.html">Map</a></li>
+        <li><a href="calendar.html" aria-current="page">Calendar</a></li>
+        <li><a href="support.html">Flood relief</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section class="page-hero short cal-hero" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/20110725_Budha_eyes_closeup_Bodhnath_Stupa_Kathmandu_Nepal.jpg?width=2000')">
+  <div class="wrap">
+    <p class="hero-ne" lang="ne" data-reveal>नेपाली पात्रो</p>
+    <h1 data-reveal>Nepali calendar</h1>
+    <p class="lede" data-reveal>Nepal counts its years in Bikram Sambat, about 56 years and 8 months ahead of the Western calendar. The new year begins in mid April.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap cal-layout">
+    <div class="cal-card" data-reveal>
+      <div class="cal-top">
+        <button class="round-btn" type="button" data-cal="-1" aria-label="Previous month">&#8249;</button>
+        <div class="cal-title" aria-live="polite">
+          <strong lang="ne" data-cal-title="ne">&nbsp;</strong>
+          <span data-cal-title="en">&nbsp;</span>
+        </div>
+        <button class="round-btn" type="button" data-cal="1" aria-label="Next month">&#8250;</button>
+      </div>
+      <div class="cal-week" aria-hidden="true">
+        <span>आइत<br><small>Sun</small></span><span>सोम<br><small>Mon</small></span><span>मंगल<br><small>Tue</small></span><span>बुध<br><small>Wed</small></span><span>बिही<br><small>Thu</small></span><span>शुक्र<br><small>Fri</small></span><span class="sat">शनि<br><small>Sat</small></span>
+      </div>
+      <div class="cal-grid" role="grid" aria-label="Days of the month"></div>
+      <div class="cal-foot">
+        <button class="btn btn-soft" type="button" data-cal="today">Go to today</button>
+        <p class="cal-key"><span class="k-today"></span> Today <span class="k-sat"></span> Saturday, the weekly holiday <span class="k-fest"></span> Fixed festival day</p>
+      </div>
+    </div>
+
+    <aside class="cal-side">
+      <div class="card-box" data-reveal>
+        <h3>Today</h3>
+        <p class="big-date" lang="ne" data-bs-today="ne">&nbsp;</p>
+        <p data-bs-today="en">&nbsp;</p>
+        <p class="muted" data-ad-today>&nbsp;</p>
+      </div>
+      <div class="card-box" data-reveal>
+        <h3>Convert a date</h3>
+        <label for="ad-input">Western date</label>
+        <input id="ad-input" type="date" min="2023-04-14" max="2033-04-13">
+        <p class="convert-out" aria-live="polite"><span lang="ne" data-conv="ne">&nbsp;</span><span data-conv="en">&nbsp;</span></p>
+      </div>
+      <div class="card-box" data-reveal>
+        <h3>This month</h3>
+        <p class="month-notes" data-cal-notes>&nbsp;</p>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section class="section alt" id="rashifal">
+  <div class="wrap">
+    <div class="section-head split" data-reveal>
+      <div>
+        <p class="hero-ne" lang="ne">राशिफल</p>
+        <h2>Today's rashifal</h2>
+        <p>Choose your sign to read today's reading on Hamro Patro, Nepal's most used calendar. It updates every morning on its own. Not sure of your sign? In Nepal your rashi comes from the Moon at your birth, and many names begin with one of your sign's letters, shown on each card.</p>
+      </div>
+      <a class="btn btn-primary" data-rashifal-page href="https://www.hamropatro.com/rashifal" target="_blank" rel="noopener">All 12 signs on Hamro Patro</a>
+    </div>
+    <ul class="rashis">
+      <li class="rashi" data-reveal>
+        <a href="https://www.hamropatro.com/rashifal" data-sign="mesh" target="_blank" rel="noopener">
+          <span class="rashi-sym" aria-hidden="true">♈&#xFE0E;</span>
+          <strong lang="ne">मेष</strong>
+          <span class="rashi-en">Mesh <em>Aries</em></span>
+          <span class="rashi-letters" lang="ne">चु, चे, चो, ला, लि, लु, ले, लो, अ</span>
+          <span class="rashi-go">Read today's rashifal</span>
+        </a>
+      </li>
+      <li class="rashi" data-reveal>
+        <a href="https://www.hamropatro.com/rashifal/brish" data-sign="brish" target="_blank" rel="noopener">
+          <span class="rashi-sym" aria-hidden="true">♉&#xFE0E;</span>
+          <strong lang="ne">वृष</strong>
+          <span class="rashi-en">Brish <em>Taurus</em></span>
+          <span class="rashi-letters" lang="ne">इ, उ, ए, ओ, वा, वि, वु, वे, वो</span>
+          <span class="rashi-go">Read today's rashifal</span>
+        </a>
+      </li>
+      <li class="rashi" data-reveal>
+        <a href="https://www.hamropatro.com/rashifal/mithun" data-sign="mithun" target="_blank" rel="noopener">
+          <span class="rashi-sym" aria-hidden="true">♊&#xFE0E;</span>
+          <strong lang="ne">मिथुन</strong>
+          <span class="rashi-en">Mithun <em>Gemini</em></span>
+          <span class="rashi-letters" lang="ne">का, कि, कु, घ, ङ, छ, के, को, हा</span>
+          <span class="rashi-go">Read today's rashifal</span>
+        </a>
+      </li>
+      <li class="rashi" data-reveal>
+        <a href="https://www.hamropatro.com/rashifal/karkat" data-sign="karkat" target="_blank" rel="noopener">
+          <span class="rashi-sym" aria-hidden="true">♋&#xFE0E;</span>
+          <strong lang="ne">कर्कट</strong>
+          <span class="rashi-en">Karkat <em>Cancer</em></span>
+          <span class="rashi-letters" lang="ne">हि, हु, हे, हो, डा, डि, डु, डे, डो</span>
+          <span class="rashi-go">Read today's rashifal</span>
+        </a>
+      </li>
+      <li class="rashi" data-reveal>
+        <a href="https://www.hamropatro.com/rashifal/singha" data-sign="singha" target="_blank" rel="noopener">
+          <span class="rashi-sym" aria-hidden="true">♌&#xFE0E;</span>
+          <strong lang="ne">सिंह</strong>
+          <span class="rashi-en">Singha <em>Leo</em></span>
+          <span class="rashi-letters" lang="ne">मा, मि, मु, मे, मो, टा, टि, टु, टे</span>
+          <span class="rashi-go">Read today's rashifal</span>
+        </a>
+      </li>
+      <li class="rashi" data-reveal>
+        <a href="https://www.hamropatro.com/rashifal/kanya" data-sign="kanya" target="_blank" rel="noopener">
+          <span class="rashi-sym" aria-hidden="true">♍&#xFE0E;</span>
+          <strong lang="ne">कन्या</strong>
+          <span class="rashi-en">Kanya <em>Virgo</em></span>
+          <span class="rashi-letters" lang="ne">टो, पा, पि, पु, ष, ण, ठ, पे, पो</span>
+          <span class="rashi-go">Read today's rashifal</span>
+        </a>
+      </li>
+      <li class="rashi" data-reveal>
+        <a href="https://www.hamropatro.com/rashifal/tula" data-sign="tula" target="_blank" rel="noopener">
+          <span class="rashi-sym" aria-hidden="true">♎&#xFE0E;</span>
+          <strong lang="ne">तुला</strong>
+          <span class="rashi-en">Tula <em>Libra</em></span>
+          <span class="rashi-letters" lang="ne">रा, रि, रु, रे, रो, ता, ति, तु, ते</span>
+          <span class="rashi-go">Read today's rashifal</span>
+        </a>
+      </li>
+      <li class="rashi" data-reveal>
+        <a href="https://www.hamropatro.com/rashifal/brischik" data-sign="brischik" target="_blank" rel="noopener">
+          <span class="rashi-sym" aria-hidden="true">♏&#xFE0E;</span>
+          <strong lang="ne">वृश्चिक</strong>
+          <span class="rashi-en">Brishchik <em>Scorpio</em></span>
+          <span class="rashi-letters" lang="ne">तो, ना, नि, नु, ने, नो, या, यि, यु</span>
+          <span class="rashi-go">Read today's rashifal</span>
+        </a>
+      </li>
+      <li class="rashi" data-reveal>
+        <a href="https://www.hamropatro.com/rashifal/dhanu" data-sign="dhanu" target="_blank" rel="noopener">
+          <span class="rashi-sym" aria-hidden="true">♐&#xFE0E;</span>
+          <strong lang="ne">धनु</strong>
+          <span class="rashi-en">Dhanu <em>Sagittarius</em></span>
+          <span class="rashi-letters" lang="ne">ये, यो, भा, भि, भु, धा, फा, ढा, भे</span>
+          <span class="rashi-go">Read today's rashifal</span>
+        </a>
+      </li>
+      <li class="rashi" data-reveal>
+        <a href="https://www.hamropatro.com/rashifal/makar" data-sign="makar" target="_blank" rel="noopener">
+          <span class="rashi-sym" aria-hidden="true">♑&#xFE0E;</span>
+          <strong lang="ne">मकर</strong>
+          <span class="rashi-en">Makar <em>Capricorn</em></span>
+          <span class="rashi-letters" lang="ne">भो, जा, जि, जु, जे, जो, ख, खि, खु, खे, खो, गा, गि</span>
+          <span class="rashi-go">Read today's rashifal</span>
+        </a>
+      </li>
+      <li class="rashi" data-reveal>
+        <a href="https://www.hamropatro.com/rashifal/kumbha" data-sign="kumbha" target="_blank" rel="noopener">
+          <span class="rashi-sym" aria-hidden="true">♒&#xFE0E;</span>
+          <strong lang="ne">कुम्भ</strong>
+          <span class="rashi-en">Kumbha <em>Aquarius</em></span>
+          <span class="rashi-letters" lang="ne">गु, गे, गो, सा, सि, सु, से, सो, दा</span>
+          <span class="rashi-go">Read today's rashifal</span>
+        </a>
+      </li>
+      <li class="rashi" data-reveal>
+        <a href="https://www.hamropatro.com/rashifal/meen" data-sign="meen" target="_blank" rel="noopener">
+          <span class="rashi-sym" aria-hidden="true">♓&#xFE0E;</span>
+          <strong lang="ne">मीन</strong>
+          <span class="rashi-en">Meen <em>Pisces</em></span>
+          <span class="rashi-letters" lang="ne">दि, दु, थ, झ, ञ, दे, दो, चा, चि</span>
+          <span class="rashi-go">Read today's rashifal</span>
+        </a>
+      </li>
+    </ul>
+    <p class="news-note">Readings are written and published by <a href="https://www.hamropatro.com/" rel="noopener">Hamro Patro</a> and open on their site. Rashifal is part of Nepal's living culture and is shared here for interest; it has no scientific basis.</p>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="flags" aria-hidden="true"></div>
+  <div class="wrap cols">
+    <section>
+      <h2>Visit Nepal</h2>
+      <p>A non-profit guide for anyone planning a first trip to Nepal, made by Bishworaj Khadka to share the country he comes from.</p>
+    </section>
+    <section>
+      <h2>In this guide</h2>
+      <ul>
+        <li><a href="index.html#where">Where to go</a></li>
+        <li><a href="index.html#when">When to go</a></li>
+        <li><a href="index.html#itineraries">Sample itineraries</a></li>
+        <li><a href="index.html#essentials">Travel essentials</a></li>
+        <li><a href="index.html#crafts">Arts and crafts</a></li>
+        <li><a href="map.html">Tourist map</a></li>
+        <li><a href="calendar.html">Nepali calendar and rashifal</a></li>
+        <li><a href="index.html#news">Latest news</a></li>
+      </ul>
+    </section>
+    <section>
+      <h2>Help after the flood</h2>
+      <p>Give directly to the Government of Nepal through the <a href="https://pmdrf.nchl.com.np/" rel="noopener">Prime Minister Disaster Relief Fund</a>. This site never collects donations.</p>
+    </section>
+  </div>
+  <div class="legal"><div class="wrap">&copy; 2026 Bishworaj Khadka. Photographs by their credited authors, see <a href="about.html#credits">photo credits</a>.</div></div>
+</footer>
+<script src="js/config.js" defer></script>
+<script src="js/calendar-data.js" defer></script>
+<script src="js/site.js" defer></script>
+</body>
+</html>
